@@ -8,8 +8,7 @@ public class Die {
    public Die(int numSides) {
       sides = numSides;
    }
-   
-    
+      
    // public methods
    public void roll() {
       top = (int)(Math.random()*sides+1);
