@@ -1,6 +1,6 @@
-public class OtherFirst {
+public class OtherFirst2 {
   
-  public static box() {
+  public static void box() {
     System.out.println("+------------+");
     System.out.println("|            |");
     System.out.println("|            |");
