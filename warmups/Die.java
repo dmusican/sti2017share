@@ -7,5 +7,9 @@ public class Die {
    public void roll() {
       top = (int)(Math.random()*6+1);
    }
+   
+   public int onTop() {
+      return top;
+   }
 
 }

@@ -3,6 +3,6 @@ public class Game {
       Die die1 = new Die();
       Die die2 = new Die();
       die1.roll();
-      //System.out.println(die1.onTop());
+      System.out.println(die1.onTop());
    }
 }
