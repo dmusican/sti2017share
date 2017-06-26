@@ -1,7 +1,7 @@
 public class Die {
 
    // instance variables
-   int top;
+   private int top;
    
    
 
