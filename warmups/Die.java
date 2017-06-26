@@ -4,10 +4,17 @@ public class Die {
    private int top;
    private int sides;
    
+   public Die() {
+      sides = 6;
+   }
+   
    // constructor
    public Die(int numSides) {
       sides = numSides;
    }
+   //public Die(int sides) {
+   //   this.sides = sides;
+   //}
       
    // public methods
    public void roll() {
