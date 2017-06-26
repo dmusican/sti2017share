@@ -5,8 +5,8 @@ public class SlowSorts {
          array[i] = (int)(Math.random()*10000);
       }
       
-      for (Integer i : array) {
-         System.out.print(array[i] + " ");
+      for (Integer element : array) {
+         System.out.print(element + " ");
       }
       System.out.println();
    }
