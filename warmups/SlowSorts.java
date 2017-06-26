@@ -1,4 +1,5 @@
 public class SlowSorts {
+
    public static void swap(int[] values, int i, int j) {
       int temp = values[i];
       values[i] = values[j];
@@ -15,6 +16,20 @@ public class SlowSorts {
          }
       }
    }
+   
+   public static void selectionSort(int[] array) {
+      int smallestPos;
+      
+      for (int i=0; i < array.length-1; i++) {
+         smallestPos = i;
+         for (int j=i+1; j < array.length; j++) {
+            if (array[j] < array[smallestPos]) {
+               smallestPos = j;
+            }
+         }
+         swap(array, smallestPos, i);
+      }
+  }
 
 
 
@@ -26,7 +41,7 @@ public class SlowSorts {
          array[i] = (int)(Math.random()*10000);
       }
     
-      bubbleSort(array);
+      selectionSort(array);
       
       // Display values  
       for (int element : array) {
