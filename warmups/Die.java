@@ -2,10 +2,17 @@ public class Die {
 
    // instance variables
    private int top;
+   private int sides;
+   
+   // constructor
+   public Die(int numSides) {
+      sides = numSides;
+   }
+   
     
    // public methods
    public void roll() {
-      top = (int)(Math.random()*6+1);
+      top = (int)(Math.random()*sides+1);
    }
    
    public int onTop() {
