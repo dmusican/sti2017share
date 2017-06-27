@@ -10,8 +10,10 @@ public class Collections {
       }
 
       for (int i=0; i < things.length; i++) {
-         System.out.println(things[i]);
+         System.out.print(things[i] + " " );
       }
+
+      System.out.println();
       
       // ArrayLists
       ArrayList<String> mydata = new ArrayList<String>();
