@@ -22,8 +22,7 @@ public class Collections {
       }
       
       mydata.set(2, "haha");
-      mydata.set(10, "my value");
-      
+            
       for (int i=0; i < 5; i++) {
          System.out.print(mydata.get(i) + " ");
       }
