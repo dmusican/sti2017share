@@ -10,5 +10,11 @@ public class History {
       mylist.add("goodbye");
       
       String word = (String)(mylist.get(0));
+      
+      // Java 5, with generics
+      ArrayList<String> otherlist = new ArrayList<String>();
+      otherlist.add("hello");
+      otherlist.add("goodbye");
+      String otherword = mylist.get(0);
   }
 }
