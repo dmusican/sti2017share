@@ -4,9 +4,13 @@ public class Collections {
    public static void main(String[] args) {
    
       //arrays
-      int[] nums = new int[5];
+      String[] things = new String[5];
+      for (int i=0; i < things.length; i++) {
+         things[i] = "Your number is : " + i;
+      }
+
       for (int i=0; i < nums.length; i++) {
-         nums[i] = i*i;
+         System.out.println(things[i]);
       }
       
       // ArrayLists
