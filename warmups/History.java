@@ -17,7 +17,7 @@ public class History {
       otherlist.add("goodbye");
       String otherword = otherlist.get(0);
       
-      ArrayList<int> intlist = new ArrayList<int>();
+      ArrayList<Integer> intlist = new ArrayList<Integer>();
       intlist.add(3);
   }
   
