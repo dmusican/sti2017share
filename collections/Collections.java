@@ -21,6 +21,8 @@ public class Collections {
          mydata.add("Your number is : " + i);
       }
       
+      mydata.set(2, "haha");
+      
       for (int i=0; i < 5; i++) {
          System.out.print(mydata.get(i) + " ");
       }
