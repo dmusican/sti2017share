@@ -15,6 +15,6 @@ public class History {
       ArrayList<String> otherlist = new ArrayList<String>();
       otherlist.add("hello");
       otherlist.add("goodbye");
-      String otherword = mylist.get(0);
+      String otherword = otherlist.get(0);
   }
 }
