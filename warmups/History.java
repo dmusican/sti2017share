@@ -6,6 +6,7 @@ public class History {
    
       // Java 4, back in the day
       ArrayList mylist = new ArrayList();
-      
+      mylist.add("hello");
+      mylist.add("goodbye");
   }
 }
