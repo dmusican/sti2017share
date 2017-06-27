@@ -9,6 +9,6 @@ public class History {
       mylist.add("hello");
       mylist.add("goodbye");
       
-      String word = mylist.get(0);
+      String word = (String)(mylist.get(0));
   }
 }
