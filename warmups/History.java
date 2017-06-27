@@ -8,5 +8,7 @@ public class History {
       ArrayList mylist = new ArrayList();
       mylist.add("hello");
       mylist.add("goodbye");
+      
+      String word = mylist.get(0);
   }
 }
