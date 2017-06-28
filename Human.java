@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Human implements Player {
    public int drawSticks() {
       System.out.print("Player, how many sticks?");
