@@ -6,7 +6,7 @@ public class Sticks2 {
       int turn = 1;
       Scanner input = new Scanner(System.in);
 
-      Player player1 = new AI(); ///new Human(1);
+      Player player1 = new Human(1);
       Player player2 = null;
             
       System.out.println("Against computer or human? ");
