@@ -14,7 +14,7 @@ public class Sticks {
       }
 
       while (sticks > 0) {
-         int sticksDrawn;
+         int sticksDrawn = 0;
          if (turn == 1) {
             System.out.print("Player 1: how many sticks? ");
             sticksDrawn = input.nextInt();         
