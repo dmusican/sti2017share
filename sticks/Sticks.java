@@ -5,15 +5,26 @@ public class Sticks {
       int sticks = 10;
       int turn = 1;
       Scanner input = new Scanner(System.in);
+      
+      System.out.println("Against computer or human? ");
+      String response = input.next();
+      boolean ai = false;
+      if (response.equals("computer")) {
+         ai = true;
+      }
 
       while (sticks > 0) {
+         int sticksDrawn;
          if (turn == 1) {
-            System.out.println("Player 1: how many sticks?");
-         } else if (turn == 2) {
-            System.out.println("Player 2: how many sticks?");
+            System.out.print("Player 1: how many sticks? ");
+            sticksDrawn = input.nextInt();         
+         } else if (turn == 2 && !ai) {
+            System.out.print("Player 2: how many sticks? ");
+            sticksDrawn = input.nextInt();         
+         } else if (turn == 2 && ai) {
+            System.out.print("Computer is choosing...");
+            sticksDrawn = 1;
          }
-         int sticksDrawn = input.nextInt();
-         
          if (sticksDrawn >= sticks) {
             break;
          }
