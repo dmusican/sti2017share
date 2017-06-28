@@ -14,7 +14,7 @@ public class Sticks2 {
       if (response.equals("computer")) {
          player2 = new AI();
       } else {
-         player2 = new Human(2);
+         player2 = new AI(); ///Human(2);
       }
       
       Player currentPlayer = player1;
