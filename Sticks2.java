@@ -1,30 +1,26 @@
 import java.util.Scanner;
 
-public class Sticks {
+public class Sticks2 {
    public static void main(String[] args) {
       int sticks = 10;
       int turn = 1;
       Scanner input = new Scanner(System.in);
-      
+
+      Player player1 = new Human();
+      Player player2 = null;
+            
       System.out.println("Against computer or human? ");
       String response = input.next();
-      boolean ai = false;
       if (response.equals("computer")) {
-         ai = true;
+         player2 = new AI();
+      } else {
+         player2 = new Human();
       }
-
+      
+      Player currentPlayer = player1;
       while (sticks > 0) {
-         int sticksDrawn = 0;
-         if (turn == 1) {
-            System.out.print("Player 1: how many sticks? ");
-            sticksDrawn = input.nextInt();         
-         } else if (turn == 2 && !ai) {
-            System.out.print("Player 2: how many sticks? ");
-            sticksDrawn = input.nextInt();         
-         } else if (turn == 2 && ai) {
-            System.out.print("Computer is choosing...");
-            sticksDrawn = 1;
-         }
+         int sticksDrawn = currentPlayer.drawSticks();
+
          if (sticksDrawn >= sticks) {
             break;
          }
@@ -32,19 +28,15 @@ public class Sticks {
          sticks = sticks - sticksDrawn;
          
          System.out.println("Sticks left = " + sticks);
-         
-         if (turn == 1) {
-            turn = 2;
+
+         if (currentPlayer == player1) {
+            currentPlayer = player2;
          } else {
-            turn = 1;
-         }
+            currentPlayer = player1;
+         }         
       }
-      
-      if (turn == 1) {
-         System.out.println("Player 1 lost.");
-      } else {
-         System.out.println("Player 2 lost.");
-      }
+
+      currentPlayer.summarize();      
    }
 }
          
