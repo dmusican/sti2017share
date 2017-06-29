@@ -157,7 +157,7 @@ public class SlowSorts {
          System.out.print(element + " ");
       }
 
-      mergeSort(array);
+      selectionSort(array);
       testSorted(array);
       
       // Display values  
