@@ -34,6 +34,8 @@ public class Examples {
    public static int recursiveExp(int base, int power) {
       if (power == 0) {
          return 1;
+      //} else if (power == 1) {
+      //   return base;
       } else if (power % 2 == 1) {
          // power is odd
          return base * recursiveExp(base, power-1);
