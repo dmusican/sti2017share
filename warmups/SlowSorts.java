@@ -152,13 +152,18 @@ public class SlowSorts {
          array[i] = (int)(Math.random()*10000);
       }
     
+      // Display values  
+      for (int element : array) {
+         System.out.print(element + " ");
+      }
+
       mergeSort(array);
       testSorted(array);
       
       // Display values  
-      /*for (int element : array) {
+      for (int element : array) {
          System.out.print(element + " ");
-      }*/
+      }
        
       System.out.println();
    }
