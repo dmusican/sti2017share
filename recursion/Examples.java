@@ -18,7 +18,7 @@ public class Examples {
       if (s.length() == 1) {
          return s;
       } else {
-         return reverseString(s.substring(1) + s.substring(0,1));
+         return reverseString(s.substring(1)) + s.substring(0,1);
       }
    
    
