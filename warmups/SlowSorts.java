@@ -145,7 +145,7 @@ public class SlowSorts {
     
 
    public static void main(String[] args) {
-      int[] array = new int[500];
+      int[] array = new int[5];
       
       // Generate random values
       for (int i=0; i < array.length; i++) {
