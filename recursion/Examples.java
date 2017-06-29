@@ -31,12 +31,27 @@ public class Examples {
       return answer;
    }
    
+   public static int recursiveExp(int base, int power) {
+      if (power == 0) {
+         return 1;
+      } else if (power % 2 == 1) {
+         // power is odd
+         return base * recursiveExp(base, power-1);
+      } else {
+         // power is even
+         int halfPower = power / 2;
+         int partialAnswer = recursiveExp(base, halfPower);
+         return partialAnswer * partialAnswer;
+      }
+   }
+   
    
    public static void main(String[] args) {
    
       System.out.println(factorial(3));
       System.out.println(reverseString("friend"));
       System.out.println(iterativeExp(2,5));
+      System.out.println(recursiveExp(2,5));
       
    }
 }
