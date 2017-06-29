@@ -52,6 +52,7 @@ public class Examples {
       System.out.println(reverseString("friend"));
       System.out.println(iterativeExp(2,5));
       System.out.println(recursiveExp(2,5));
+      System.out.println(recursiveExp(2,9));
       
    }
 }
