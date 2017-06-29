@@ -10,6 +10,7 @@ public class Examples {
       } else {
          return n * factorial(n-1);
       }
+   }
       
   
    public static String reverseString(String s) {
