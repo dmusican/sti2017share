@@ -23,7 +23,7 @@ public class Examples {
    }
    
    // Iteratively do exponentation
-   public int iterativeExp(int base, int power) {
+   public static int iterativeExp(int base, int power) {
       int answer = 1;
       for (int i=0; i < power; i++) {
          answer = answer * base;
@@ -36,7 +36,7 @@ public class Examples {
    
       System.out.println(factorial(3));
       System.out.println(reverseString("friend"));
-      System.out.println(interativeExp(2,5));
+      System.out.println(iterativeExp(2,5));
       
    }
 }
